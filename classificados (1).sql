@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28-Jun-2020 às 09:11
+-- Tempo de geração: 05-Jul-2020 às 09:13
 -- Versão do servidor: 10.4.11-MariaDB
 -- versão do PHP: 7.4.3
 
@@ -43,16 +43,14 @@ CREATE TABLE `anuncios` (
 --
 
 INSERT INTO `anuncios` (`id`, `id_usuario`, `id_categoria`, `titulo`, `descricao`, `preco`, `estado`) VALUES
-(4, 1, 3, 'Video-game Xbox 360 desbloqueado', '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Vídeo-game da Microsoft, já fora de linha                                                                                                                                                                                                                                                                                                                                                                                                                ', 850, 2),
-(6, 1, 5, 'Ninja 300 2014 cinza em ótimo estado', '                                                                        Nada pra fazer, manutenção em dia                                                ', 15500, 2),
-(7, 3, 6, 'Rasteirinha bonita', '                                    Rasteirinha sem uso, comprei e não gostei                        ', 120, 2),
-(8, 3, 2, 'Jaqueta de couro preta', '            Jaqueta nova - marca Barbante        ', 1150, 1),
-(9, 2, 3, 'Celular Lenovo Vibe K6', '                        Celular semi-novo                ', 500, 1),
-(10, 2, 7, 'Pipas de papel', '                                                Pipas diversas                                ', 3.5, 2),
-(11, 2, 7, 'Banco Imobiliario Brasil', '                        jogo legal                ', 80, 1),
-(12, 2, 7, 'Banco Imobiliario Brasil', '            jogo legal        ', 80, 0),
-(13, 2, 7, 'Banco Imobiliario Brasil', '                                    jogo legal                        ', 80, 2),
-(15, 2, 4, 'Perua Kombi 96', '            Está muito boa, branca        ', 7000, 0),
+(4, 1, 3, 'Video-game Xbox 360 desbloqueado', '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Vídeo-game da Microsoft, já fora de linha                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ', 850, 2),
+(6, 1, 5, 'Ninja 300 2014 cinza em ótimo estado', '                                                                                                                                    Nada pra fazer, manutenção em dia                                                                                                                                                                         ', 15500, 2),
+(7, 3, 6, 'Rasteirinha bonita', '                                                Rasteirinha sem uso, comprei e não gostei                                ', 120, 2),
+(8, 3, 2, 'Jaqueta de couro preta', '                        Jaqueta nova - marca Barbante                ', 1150, 1),
+(9, 2, 3, 'Celular Lenovo Vibe K6', '                                    Celular semi-novo                        ', 500, 1),
+(10, 2, 7, 'Pipas de papel', '                                                            Pipas diversas                                        ', 3.5, 2),
+(11, 2, 7, 'Banco Imobiliario Brasil', '                                    jogo legal                        ', 80, 1),
+(15, 2, 4, 'Perua Kombi 96', '                        Está muito boa, branca                ', 7000, 0),
 (16, 4, 3, 'Celular Samsung A10', '            Celular novinho, pouco uso        ', 650, 2);
 
 -- --------------------------------------------------------
@@ -72,20 +70,17 @@ CREATE TABLE `anuncios_imagens` (
 --
 
 INSERT INTO `anuncios_imagens` (`id`, `id_anuncio`, `url`) VALUES
-(15, 4, 'a106cdee6c05ff1c505dd9515e4179ea.jpg'),
-(16, 6, '84fe3fff2220bb1d2811616346a068fa.jpg'),
-(68, 7, '0a5cdd1a5ec9f8b52105072ccaa3066e.jpg'),
-(69, 8, '44de3333a37ad721e49e980195530dc8.jpg'),
-(70, 9, '8fad06ba83a5fd733ac2c001a56dd1d3.jpg'),
-(71, 9, '36d6476557e71e6bb26a074c8ff441e0.jpg'),
-(72, 10, '7cc168a9fab4d5c35d665f8aafd5969b.jpg'),
-(73, 13, 'f5b80035705ca21f6a6677eed5b0c4db.jpg'),
-(74, 14, '5f52731291130bebe752a3e4a81351ae.jpg'),
-(75, 4, '69c8b72279aa1280de7cfff9dea1a9d1.jpg'),
-(76, 15, 'a489e8937e0194dc1c09007ed733df5c.jpg'),
-(77, 16, '67ff0d957900b3c2499f2b1c6b74c82b.jpg'),
-(78, 17, '84f8ab3a1c6bf760cfc0ec58271f0e85.jpg'),
-(79, 6, '532400d094a4065f4da19a7ea0891f0b.jpg');
+(108, 4, '951a95eca9e1ce1b5046707f5b0a6764.jpg'),
+(109, 4, 'ae0dd84bf2af1e36d364dca065316ade.jpg'),
+(110, 6, 'cb4ac530d858e9bc6d253ea92e1f8411.jpg'),
+(111, 6, '4ac4146a9277a1204e66dde5358b9bd0.jpg'),
+(112, 7, '109aa84910677e9b663a27dba7c0910b.jpg'),
+(113, 8, '023ae6c7ec315bfea3de60422b4f6c44.jpg'),
+(114, 9, '8e7c884919b481d13a516be67939b214.jpg'),
+(115, 9, 'ca7e9eda4d727e2a3e40efbdbb36c874.jpg'),
+(116, 10, '657449e31acefbc5006c8efd0db113ea.jpg'),
+(117, 11, '823c40cc3734c4d2d26eabb161cafdf7.jpg'),
+(118, 15, 'efa3b179268b890e52ab2f7c6f9f809f.jpg');
 
 -- --------------------------------------------------------
 
@@ -171,13 +166,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `anuncios`
 --
 ALTER TABLE `anuncios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT de tabela `anuncios_imagens`
 --
 ALTER TABLE `anuncios_imagens`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=119;
 
 --
 -- AUTO_INCREMENT de tabela `categorias`
